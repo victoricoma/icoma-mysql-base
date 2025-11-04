@@ -1,0 +1,9 @@
+FROM mysql:8.0
+
+ENV PORT=3306
+EXPOSE 3306
+ENV MYSQL_ROOT_PASSWORD=icoma3008 \
+    MYSQL_DATABASE=base_teste \
+    MYSQL_USER=icoma \
+    MYSQL_PASSWORD=victor18981
+CMD ["mysqld"]
